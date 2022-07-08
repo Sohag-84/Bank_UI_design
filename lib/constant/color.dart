@@ -21,3 +21,8 @@ class CheckEmailColor {
   static const Color titleColor = Color(0xFF343B42);
   static const Color textColor = Color(0xFF8D8D8D);
 }
+
+class BottomNavColor {
+  static const Color selectedItemColor = Color(0xFF0DBE53);
+  static const Color unselectedItemColor = Color(0xFF7A7A7A);
+}

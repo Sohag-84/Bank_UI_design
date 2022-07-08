@@ -5,6 +5,7 @@ import 'package:get/get.dart';
 import '../views/email_check_screen.dart';
 import '../views/forgot_password_screen.dart';
 import '../views/login_screen.dart';
+import '../views/pages/bottom_nav_page.dart';
 import '../views/pages/onboarding_page.dart';
 import '../views/splash_screen.dart';
 import '../views/tip_screen.dart';
@@ -13,8 +14,9 @@ const String splashScreen = '/splash-screen';
 const String onboardingPage = '/onboarding-page';
 const String loginScreen = '/login-screen';
 const String forgotPasswordScreen = '/forgotPassword-screen';
-const String emailCheckScreen = '/emmailCheck-screen';
+const String emailCheckScreen = '/emailCheck-screen';
 const String tipScreen = '/tip-screen';
+const String navigationBar = '/navigationBar-screen';
 
 List<GetPage> pages = [
   GetPage(
@@ -40,5 +42,9 @@ List<GetPage> pages = [
   GetPage(
     name: tipScreen,
     page: () => TipScreen(),
+  ),
+  GetPage(
+    name: navigationBar,
+    page: () => BottomNavBarPage(),
   ),
 ];

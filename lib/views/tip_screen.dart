@@ -1,9 +1,11 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:bank_ui_design/constant/strings.dart';
+import 'package:bank_ui_design/routes/route.dart';
 import 'package:bank_ui_design/widgets/custom_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/get.dart';
 
 class TipScreen extends StatelessWidget {
   const TipScreen({Key? key}) : super(key: key);
@@ -29,8 +31,11 @@ class TipScreen extends StatelessWidget {
                   SizedBox(
                     height: 20.h,
                   ),
-                  CustomButton(
-                    text: TipText.buttonText,
+                  InkWell(
+                    onTap: ()=> Get.toNamed(navigationBar),
+                    child: CustomButton(
+                      text: TipText.buttonText,
+                    ),
                   )
                 ],
               ),
