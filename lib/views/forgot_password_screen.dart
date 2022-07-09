@@ -8,6 +8,7 @@ import 'package:get/get.dart';
 
 import '../constant/color.dart';
 import '../widgets/custom_button.dart';
+import '../widgets/custom_circle.dart';
 import '../widgets/custom_textField.dart';
 
 class ForgotPasswordScreen extends StatelessWidget {
@@ -23,22 +24,7 @@ class ForgotPasswordScreen extends StatelessWidget {
             padding: EdgeInsets.only(left: 15.w, right: 15.w, top: 10.h),
             child: Column(
               children: [
-                Align(
-                  alignment: Alignment.topLeft,
-                  child: InkWell(
-                    onTap: ()=> Get.back(),
-                    child: CircleAvatar(
-                      backgroundColor: AuthColors.iconColor,
-                      radius: 15.r,
-                      child: Center(
-                        child: Icon(
-                          Icons.arrow_back_outlined,
-                          color: Colors.white,
-                        ),
-                      ),
-                    ),
-                  ),
-                ),
+                CustomCircle(icon: Icons.arrow_back_outlined, radius: 15.r, color: AuthColors.iconColor),
                 SizedBox(
                   height: 54.h,
                 ),

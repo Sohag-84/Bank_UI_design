@@ -2,12 +2,14 @@
 
 import 'package:bank_ui_design/constant/color.dart';
 import 'package:bank_ui_design/constant/strings.dart';
+import 'package:bank_ui_design/routes/route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/get.dart';
 
-import '../widgets/custom_container.dart';
-import '../widgets/custom_transaction.dart';
-import '../widgets/custom_transaction_list.dart';
+import '../../widgets/custom_container.dart';
+import '../../widgets/custom_transaction.dart';
+import '../../widgets/custom_transaction_list.dart';
 
 class DashboardScreen extends StatelessWidget {
   const DashboardScreen({Key? key}) : super(key: key);
@@ -177,8 +179,8 @@ class DashboardScreen extends StatelessWidget {
                               height: 20.h,
                             ),
                             CustomTransaction(
-                              icon: Icons.account_balance_wallet_outlined,
-                              text: DashboardText.withdraw,
+                              icon: Icons.send_time_extension,
+                              text: DashboardText.sendMoney,
                             ),
                           ],
                         ),
@@ -253,12 +255,15 @@ class DashboardScreen extends StatelessWidget {
                                     height: 5.h,
                                   ),
                                   Center(
-                                    child: Text(
-                                      "View All",
-                                      style: TextStyle(
-                                        color: DashboardColor.iconColor,
-                                        fontSize: 14.sp,
-                                        fontWeight: FontWeight.w700,
+                                    child: InkWell(
+                                      onTap: ()=>Get.toNamed(transactionScreen),
+                                      child: Text(
+                                        "View All",
+                                        style: TextStyle(
+                                          color: DashboardColor.iconColor,
+                                          fontSize: 14.sp,
+                                          fontWeight: FontWeight.w700,
+                                        ),
                                       ),
                                     ),
                                   )

@@ -67,3 +67,10 @@ class ListTileText {
   static const String subtitle_1 = "28, Jan 2020";
   static const String subtitle_2 = "28, Jan 2020";
 }
+
+class WalletText{
+  static const String transactionHistory = "Transaction History";
+  static const String allTransaction = "All Transactions";
+  static const String debits = "Debits";
+  static const String credits = "Credits";
+}

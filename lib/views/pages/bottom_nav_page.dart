@@ -3,10 +3,10 @@
 import 'package:flutter/material.dart';
 
 import '../../constant/color.dart';
-import '../card_screen.dart';
-import '../dashboard_screen.dart';
-import '../setting_screen.dart';
-import '../wallet_screen.dart';
+import 'card_screen.dart';
+import 'dashboard_screen.dart';
+import 'setting_screen.dart';
+import 'wallet_screen.dart';
 
 class BottomNavBarPage extends StatefulWidget {
   const BottomNavBarPage({Key? key}) : super(key: key);

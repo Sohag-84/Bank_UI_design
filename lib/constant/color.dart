@@ -48,3 +48,11 @@ class ListTileColor {
   static Color subtitleColor = Color(0xFF929292);
   static Color amountColor = Color(0xFF0A004A);
 }
+
+class WalletColor {
+  static Color iconColor = Color(0xFF62BB46);
+  static Color appBarColor = Color(0xFFF1F3F4);
+  static Color indicatorColor = Color(0xFF046AE1);
+  static Color unselectedTabBarColor = Color(0xFF969696);
+  static Color labelColor = Color(0xFF046AE1);
+}

@@ -16,8 +16,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ScreenUtilInit(
-      designSize: Size(360, 690),
-        builder: (_,child){
+        designSize: Size(360, 690),
+        builder: (_, child) {
           return GetMaterialApp(
             debugShowCheckedModeBanner: false,
             title: 'Bank aplication',
@@ -25,7 +25,6 @@ class MyApp extends StatelessWidget {
             initialRoute: splashScreen,
             getPages: pages,
           );
-        }
-    );
+        });
   }
 }
