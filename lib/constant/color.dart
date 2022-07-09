@@ -62,4 +62,6 @@ class WalletColor{
   static Color containerColor_1 = Color(0xFF08083D);
   static Color containerColor_2 = Color(0xFF070767);
   static Color containerColor_3 = Colors.white;
+  static Color circleColor = Color(0xFF46A02A);
+  static Color circleTextColor = Color(0xFF333333);
 }
