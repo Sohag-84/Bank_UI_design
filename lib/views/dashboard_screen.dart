@@ -177,7 +177,7 @@ class DashboardScreen extends StatelessWidget {
                             ),
                             CustomTransaction(
                               icon: Icons.send_time_extension,
-                              text: DashboardText.fundWallet,
+                              text: DashboardText.sendMoney,
                             ),
                           ],
                         ),
