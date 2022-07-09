@@ -110,6 +110,7 @@ class DashboardScreen extends StatelessWidget {
                             image: 'images/splash.png',
                             title: DashboardText.surtaqCurrency,
                             balance: 'Q190,000',
+                            color: Colors.white,
                           ),
                           SizedBox(
                             width: 16.w,
@@ -118,6 +119,7 @@ class DashboardScreen extends StatelessWidget {
                             image: 'images/usa.png',
                             title: "USD",
                             balance: '\$42,000',
+                            color: Colors.white,
                           ),
                           SizedBox(
                             width: 16.w,
@@ -126,6 +128,7 @@ class DashboardScreen extends StatelessWidget {
                             image: 'images/bd.png',
                             title: "BDT",
                             balance: '৳5190,000',
+                            color: Colors.white,
                           ),
                           SizedBox(
                             width: 16.w,
@@ -134,6 +137,7 @@ class DashboardScreen extends StatelessWidget {
                             image: 'images/german.png',
                             title: DashboardText.surtaqCurrency,
                             balance: '€230,000',
+                            color: Colors.white,
                           ),
                           SizedBox(
                             width: 16.w,

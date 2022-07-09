@@ -10,12 +10,14 @@ class CustomContainer extends StatelessWidget {
   final image;
   String title;
   String balance;
-  CustomContainer(
-      {Key? key,
-      required this.image,
-      required this.title,
-      required this.balance})
-      : super(key: key);
+  Color color;
+  CustomContainer({
+    Key? key,
+    required this.image,
+    required this.title,
+    required this.balance,
+    required this.color,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +25,7 @@ class CustomContainer extends StatelessWidget {
       height: 89.h,
       width: 196.w,
       decoration: BoxDecoration(
-          color: DashboardColor.containerColor,
+          color: color,
           borderRadius: BorderRadius.circular(10.r)),
       child: Padding(
         padding: EdgeInsets.only(
