@@ -27,7 +27,7 @@ class BottomNavColor {
   static Color unselectedItemColor = Color(0xFF7A7A7A).withOpacity(0.84);
 }
 
-class DashboardColor{
+class DashboardColor {
   static const Color bg_color = Color(0xFF051F0E);
   static const Color containerColor = Colors.white;
   static const Color textColor = Colors.white;

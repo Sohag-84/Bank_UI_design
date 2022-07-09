@@ -50,9 +50,12 @@ class TipText {
   static const String buttonText = "Got It!";
 }
 
-class DashboardText{
+class DashboardText {
   static const String welcomeText = "Hello, Precious!";
   static const String welcomeText2 = "Su/Pre123";
   static const String surtaqCurrency = "SUTRAQ CURRENCY";
   static const String availableBalance = "AVAILABLE BALANCE";
+  static const String fundWallet = "Fund Wallet";
+  static const String sendMoney = "Send Money";
+  static const String withdraw = "Withdraw";
 }
