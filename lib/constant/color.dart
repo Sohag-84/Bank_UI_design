@@ -1,4 +1,4 @@
-// ignore_for_file: constant_identifier_names
+// ignore_for_file: constant_identifier_names, prefer_const_constructors
 
 import 'package:flutter/material.dart';
 
@@ -24,5 +24,17 @@ class CheckEmailColor {
 
 class BottomNavColor {
   static const Color selectedItemColor = Color(0xFF0DBE53);
-  static const Color unselectedItemColor = Color(0xFF7A7A7A);
+  static Color unselectedItemColor = Color(0xFF7A7A7A).withOpacity(0.84);
+}
+
+class DashboardColor{
+  static const Color bg_color = Color(0xFF051F0E);
+  static const Color containerColor = Colors.white;
+  static const Color textColor = Colors.white;
+  static const Color circleColor = Color(0xFF051F0E);
+  static const Color notificationColor = Color(0xFF046AE1);
+  static const Color sutaraqCurrencyColor = Color(0xFF0A004A);
+  static Color availableBalanceColor = Color(0xFF0A004A).withOpacity(.4);
+  static Color balanceColor = Color(0xFF46A02A);
+  static Color iconColor = Color(0xFF46A02A);
 }
