@@ -51,11 +51,19 @@ class TipText {
 }
 
 class DashboardText {
-  static const String welcomeText = "Hello, Precious!";
-  static const String welcomeText2 = "Su/Pre123";
+  static const String welcomeText = "Hello, Sohag!";
+  static const String welcomeText2 = "Nikli,Kishoreganj";
   static const String surtaqCurrency = "SUTRAQ CURRENCY";
   static const String availableBalance = "AVAILABLE BALANCE";
   static const String fundWallet = "Fund Wallet";
   static const String sendMoney = "Send Money";
   static const String withdraw = "Withdraw";
+  static const String recentTransaction = "Recent Transactions";
+}
+
+class ListTileText {
+  static const String title_1 = "Access Bank";
+  static const String title_2 = "Alpha Loans";
+  static const String subtitle_1 = "28, Jan 2020";
+  static const String subtitle_2 = "28, Jan 2020";
 }

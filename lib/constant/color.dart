@@ -38,3 +38,13 @@ class DashboardColor {
   static Color balanceColor = Color(0xFF46A02A);
   static Color iconColor = Color(0xFF46A02A);
 }
+
+class ListTileColor {
+  static Color circleBgColor_1 = Color(0xFFCBEEEA);
+  static Color circleBgColor_2 = Color(0xFFFFCFCF);
+  static Color iconColor_1 = Color(0xFF0DBE53);
+  static Color iconColor_2 = Color(0xFFE64E00);
+  static Color titleColor = Color(0xFF0A004A);
+  static Color subtitleColor = Color(0xFF929292);
+  static Color amountColor = Color(0xFF0A004A);
+}

@@ -7,6 +7,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../widgets/custom_container.dart';
 import '../widgets/custom_transaction.dart';
+import '../widgets/custom_transaction_list.dart';
 
 class DashboardScreen extends StatelessWidget {
   const DashboardScreen({Key? key}) : super(key: key);
@@ -145,7 +146,7 @@ class DashboardScreen extends StatelessWidget {
                 height: 35.h,
               ),
               SizedBox(
-                height: 504.h,
+                height: 545.h,
                 child: Container(
                   decoration: BoxDecoration(
                     color: DashboardColor.balanceColor,
@@ -176,10 +177,95 @@ class DashboardScreen extends StatelessWidget {
                               height: 20.h,
                             ),
                             CustomTransaction(
-                              icon: Icons.send_time_extension,
-                              text: DashboardText.sendMoney,
+                              icon: Icons.account_balance_wallet_outlined,
+                              text: DashboardText.withdraw,
                             ),
                           ],
+                        ),
+                        Expanded(
+                          child: Container(
+                            width: double.infinity,
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.only(
+                                topLeft: Radius.circular(20.r),
+                                topRight: Radius.circular(20.r),
+                              ),
+                            ),
+                            child: Padding(
+                              padding: EdgeInsets.symmetric(
+                                  horizontal: 25.w, vertical: 22.h),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    DashboardText.recentTransaction,
+                                    style: TextStyle(
+                                      fontSize: 17.sp,
+                                      fontWeight: FontWeight.w700,
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    height: 16.h,
+                                  ),
+                                  CustomTransactionList(
+                                    icon: Icons.arrow_back_outlined,
+                                    circleColor: ListTileColor.circleBgColor_1,
+                                    iconColor: ListTileColor.iconColor_1,
+                                    title: ListTileText.title_1,
+                                    subtitle: ListTileText.subtitle_1,
+                                    amount: '\$2,500',
+                                  ),
+                                  SizedBox(
+                                    height: 10.h,
+                                  ),
+                                  CustomTransactionList(
+                                    icon: Icons.arrow_forward_outlined,
+                                    circleColor: ListTileColor.circleBgColor_2,
+                                    iconColor: ListTileColor.iconColor_2,
+                                    title: ListTileText.title_2,
+                                    subtitle: ListTileText.subtitle_2,
+                                    amount: '\$3,500',
+                                  ),
+                                  SizedBox(
+                                    height: 10.h,
+                                  ),
+                                  CustomTransactionList(
+                                    icon: Icons.arrow_forward_outlined,
+                                    circleColor: ListTileColor.circleBgColor_1,
+                                    iconColor: ListTileColor.iconColor_1,
+                                    title: ListTileText.title_1,
+                                    subtitle: ListTileText.subtitle_1,
+                                    amount: '\$70,300',
+                                  ),
+                                  SizedBox(
+                                    height: 10.h,
+                                  ),
+                                  CustomTransactionList(
+                                    icon: Icons.arrow_forward_outlined,
+                                    circleColor: ListTileColor.circleBgColor_2,
+                                    iconColor: ListTileColor.iconColor_2,
+                                    title: ListTileText.title_2,
+                                    subtitle: ListTileText.subtitle_2,
+                                    amount: '\$40,780',
+                                  ),
+                                  SizedBox(
+                                    height: 5.h,
+                                  ),
+                                  Center(
+                                    child: Text(
+                                      "View All",
+                                      style: TextStyle(
+                                        color: DashboardColor.iconColor,
+                                        fontSize: 14.sp,
+                                        fontWeight: FontWeight.w700,
+                                      ),
+                                    ),
+                                  )
+                                ],
+                              ),
+                            ),
+                          ),
                         ),
                       ],
                     ),
