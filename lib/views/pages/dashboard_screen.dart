@@ -110,7 +110,8 @@ class DashboardScreen extends StatelessWidget {
                             image: 'images/splash.png',
                             title: DashboardText.surtaqCurrency,
                             balance: 'Q190,000',
-                            color: Colors.white,
+                            containerColor: Colors.white,
+                            titleColor: DashboardColor.sutaraqCurrencyColor,
                           ),
                           SizedBox(
                             width: 16.w,
@@ -119,7 +120,8 @@ class DashboardScreen extends StatelessWidget {
                             image: 'images/usa.png',
                             title: "USD",
                             balance: '\$42,000',
-                            color: Colors.white,
+                            containerColor: Colors.white,
+                            titleColor: DashboardColor.sutaraqCurrencyColor,
                           ),
                           SizedBox(
                             width: 16.w,
@@ -128,7 +130,8 @@ class DashboardScreen extends StatelessWidget {
                             image: 'images/bd.png',
                             title: "BDT",
                             balance: '৳5190,000',
-                            color: Colors.white,
+                            containerColor: Colors.white,
+                            titleColor: DashboardColor.sutaraqCurrencyColor,
                           ),
                           SizedBox(
                             width: 16.w,
@@ -137,7 +140,8 @@ class DashboardScreen extends StatelessWidget {
                             image: 'images/german.png',
                             title: DashboardText.surtaqCurrency,
                             balance: '€230,000',
-                            color: Colors.white,
+                            containerColor: Colors.white,
+                            titleColor: DashboardColor.sutaraqCurrencyColor,
                           ),
                           SizedBox(
                             width: 16.w,
@@ -171,6 +175,9 @@ class DashboardScreen extends StatelessWidget {
                             CustomTransaction(
                               icon: Icons.wallet_travel,
                               text: DashboardText.fundWallet,
+                              bgColor: DashboardColor.circleColor,
+                              radius: 35.r,
+                              textColor: Colors.white,
                             ),
                             SizedBox(
                               height: 20.h,
@@ -178,13 +185,19 @@ class DashboardScreen extends StatelessWidget {
                             CustomTransaction(
                               icon: Icons.send_to_mobile_outlined,
                               text: DashboardText.sendMoney,
+                              bgColor: DashboardColor.circleColor,
+                              radius: 35.r,
+                              textColor: Colors.white,
                             ),
                             SizedBox(
                               height: 20.h,
                             ),
                             CustomTransaction(
-                              icon: Icons.send_time_extension,
-                              text: DashboardText.sendMoney,
+                              icon: Icons.sensor_window_outlined,
+                              text: DashboardText.withdraw,
+                              bgColor: DashboardColor.circleColor,
+                              radius: 35.r,
+                              textColor: Colors.white,
                             ),
                           ],
                         ),

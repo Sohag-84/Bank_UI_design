@@ -49,10 +49,17 @@ class ListTileColor {
   static Color amountColor = Color(0xFF0A004A);
 }
 
-class WalletColor {
+class TransactionColor {
   static Color iconColor = Color(0xFF62BB46);
   static Color appBarColor = Color(0xFFF1F3F4);
   static Color indicatorColor = Color(0xFF046AE1);
   static Color unselectedTabBarColor = Color(0xFF969696);
   static Color labelColor = Color(0xFF046AE1);
+}
+
+class WalletColor{
+  static Color bg_color = Color(0xFFE5E5E5);
+  static Color containerColor_1 = Color(0xFF08083D);
+  static Color containerColor_2 = Color(0xFF070767);
+  static Color containerColor_3 = Colors.white;
 }

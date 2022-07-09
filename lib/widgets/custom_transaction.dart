@@ -8,7 +8,16 @@ import '../constant/color.dart';
 class CustomTransaction extends StatelessWidget {
   final IconData icon;
   final text;
-  const CustomTransaction({Key? key, required this.icon, required this.text})
+  Color bgColor;
+  double radius;
+  Color textColor;
+  CustomTransaction(
+      {Key? key,
+      required this.icon,
+      required this.text,
+      required this.bgColor,
+      required this.radius,
+      required this.textColor})
       : super(key: key);
 
   @override
@@ -20,8 +29,8 @@ class CustomTransaction extends StatelessWidget {
           Column(
             children: [
               CircleAvatar(
-                radius: 35,
-                backgroundColor: DashboardColor.circleColor,
+                radius: radius, //35
+                backgroundColor: bgColor,
                 child: Icon(
                   icon,
                   color: Colors.white,
@@ -36,7 +45,7 @@ class CustomTransaction extends StatelessWidget {
                 style: TextStyle(
                   fontSize: 14.sp,
                   fontWeight: FontWeight.w700,
-                  color: Colors.white,
+                  color: textColor,
                 ),
               )
             ],

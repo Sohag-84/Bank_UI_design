@@ -33,7 +33,7 @@ class _TransactionScreenState extends State<TransactionScreen>
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
           Container(
-            color: WalletColor.appBarColor,
+            color: TransactionColor.appBarColor,
             child: Column(
               children: [
                 Container(
@@ -43,13 +43,13 @@ class _TransactionScreenState extends State<TransactionScreen>
                       CustomCircle(
                         icon: Icons.arrow_back_outlined,
                         radius: 20.r,
-                        color: WalletColor.iconColor,
+                        color: TransactionColor.iconColor,
                       ),
                       SizedBox(
                         width: 30.w,
                       ),
                       Text(
-                        WalletText.transactionHistory,
+                        TransactionScreenText.transactionHistory,
                         style: TextStyle(
                           color: Colors.black,
                           fontSize: 20.sp,
@@ -99,19 +99,19 @@ class _TransactionScreenState extends State<TransactionScreen>
                 ),
                 TabBar(
                   controller: _tabController,
-                  labelColor: WalletColor.labelColor,
-                  unselectedLabelColor: WalletColor.unselectedTabBarColor,
+                  labelColor: TransactionColor.labelColor,
+                  unselectedLabelColor: TransactionColor.unselectedTabBarColor,
                   isScrollable: true,
-                  indicatorColor: WalletColor.indicatorColor,
+                  indicatorColor: TransactionColor.indicatorColor,
                   tabs: const [
                     Tab(
-                      text: WalletText.allTransaction,
+                      text: TransactionScreenText.allTransaction,
                     ),
                     Tab(
-                      text: WalletText.debits,
+                      text: TransactionScreenText.debits,
                     ),
                     Tab(
-                      text: WalletText.credits,
+                      text: TransactionScreenText.credits,
                     ),
                   ],
                 ),

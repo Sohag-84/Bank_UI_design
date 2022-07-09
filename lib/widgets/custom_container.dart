@@ -10,13 +10,15 @@ class CustomContainer extends StatelessWidget {
   final image;
   String title;
   String balance;
-  Color color;
+  Color containerColor;
+  Color titleColor;
   CustomContainer({
     Key? key,
     required this.image,
     required this.title,
     required this.balance,
-    required this.color,
+    required this.containerColor,
+    required this.titleColor,
   }) : super(key: key);
 
   @override
@@ -25,7 +27,7 @@ class CustomContainer extends StatelessWidget {
       height: 89.h,
       width: 196.w,
       decoration: BoxDecoration(
-          color: color,
+          color: containerColor,
           borderRadius: BorderRadius.circular(10.r)),
       child: Padding(
         padding: EdgeInsets.only(
@@ -54,6 +56,7 @@ class CustomContainer extends StatelessWidget {
                       style: TextStyle(
                         fontWeight: FontWeight.w700,
                         fontSize: 10.sp,
+                        color: titleColor,
                       ),
                     ),
                   ],
