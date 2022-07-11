@@ -68,14 +68,27 @@ class ListTileText {
   static const String subtitle_2 = "28, Jan 2020";
 }
 
-class TransactionScreenText{
+class TransactionScreenText {
   static const String transactionHistory = "Transaction History";
   static const String allTransaction = "All Transactions";
   static const String debits = "Debits";
   static const String credits = "Credits";
 }
 
-class WalletText{
+class WalletText {
   static const String myWalletText = "My Wallets";
   static const String recentTransaction = "Recent Transactions";
+}
+
+class CardText {
+  static const String myCardText = "My Cards";
+  static const String recentTransaction = "Recent Transactions";
+  static const String visa = "VISA";
+  static const String cardNumberText = "CARD NUMBER";
+  static const String cardNumber_1 = "**** **** **** *379";
+  static const String cardNumber_2 = "**** **** **** *379";
+  static const String cardNumber_3 = "**** **** **** *379";
+  static const String cardNumber_4 = "**** **** **** *379";
+  static const String cardHolderName = "CARD HOLDER NAME";
+  static const String expireDate = "EXPIRE DATE";
 }

@@ -1,4 +1,4 @@
-// ignore_for_file: constant_identifier_names, prefer_const_constructors
+// ignore_for_file: constant_identifier_names, prefer_const_constructors, non_constant_identifier_names
 
 import 'package:flutter/material.dart';
 
@@ -57,11 +57,16 @@ class TransactionColor {
   static Color labelColor = Color(0xFF046AE1);
 }
 
-class WalletColor{
+class WalletColor {
   static Color bg_color = Color(0xFFE5E5E5);
   static Color containerColor_1 = Color(0xFF08083D);
   static Color containerColor_2 = Color(0xFF070767);
   static Color containerColor_3 = Colors.white;
   static Color circleColor = Color(0xFF46A02A);
   static Color circleTextColor = Color(0xFF333333);
+}
+
+class CardColor {
+  static const Color bg_color = Color(0xFFE5E5E5);
+  static Color blurTextcolor = Color(0xFFFEFEFE).withOpacity(.50);
 }

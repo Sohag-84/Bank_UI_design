@@ -2,7 +2,6 @@
 
 import 'package:bank_ui_design/constant/color.dart';
 import 'package:bank_ui_design/constant/strings.dart';
-import 'package:bank_ui_design/widgets/custom_circle.dart';
 import 'package:bank_ui_design/widgets/custom_transaction.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -93,7 +92,7 @@ class WalletScreen extends StatelessWidget {
                 height: 10.h,
               ),
               Padding(
-                padding: EdgeInsets.symmetric(horizontal: 8.w,vertical: 5.h),
+                padding: EdgeInsets.symmetric(horizontal: 8.w, vertical: 5.h),
                 child: SizedBox(
                   height: 560.h,
                   width: double.infinity,
@@ -166,7 +165,8 @@ class WalletScreen extends StatelessWidget {
                                     ),
                                     CustomTransactionList(
                                       icon: Icons.arrow_back_outlined,
-                                      circleColor: ListTileColor.circleBgColor_1,
+                                      circleColor:
+                                          ListTileColor.circleBgColor_1,
                                       iconColor: ListTileColor.iconColor_1,
                                       title: ListTileText.title_1,
                                       subtitle: ListTileText.subtitle_1,
@@ -177,7 +177,8 @@ class WalletScreen extends StatelessWidget {
                                     ),
                                     CustomTransactionList(
                                       icon: Icons.arrow_forward_outlined,
-                                      circleColor: ListTileColor.circleBgColor_2,
+                                      circleColor:
+                                          ListTileColor.circleBgColor_2,
                                       iconColor: ListTileColor.iconColor_2,
                                       title: ListTileText.title_2,
                                       subtitle: ListTileText.subtitle_2,
@@ -188,7 +189,8 @@ class WalletScreen extends StatelessWidget {
                                     ),
                                     CustomTransactionList(
                                       icon: Icons.arrow_forward_outlined,
-                                      circleColor: ListTileColor.circleBgColor_1,
+                                      circleColor:
+                                          ListTileColor.circleBgColor_1,
                                       iconColor: ListTileColor.iconColor_1,
                                       title: ListTileText.title_1,
                                       subtitle: ListTileText.subtitle_1,
@@ -199,7 +201,8 @@ class WalletScreen extends StatelessWidget {
                                     ),
                                     CustomTransactionList(
                                       icon: Icons.arrow_forward_outlined,
-                                      circleColor: ListTileColor.circleBgColor_2,
+                                      circleColor:
+                                          ListTileColor.circleBgColor_2,
                                       iconColor: ListTileColor.iconColor_2,
                                       title: ListTileText.title_2,
                                       subtitle: ListTileText.subtitle_2,
@@ -210,7 +213,8 @@ class WalletScreen extends StatelessWidget {
                                     ),
                                     Center(
                                       child: InkWell(
-                                        onTap: ()=>Get.toNamed(transactionScreen),
+                                        onTap: () =>
+                                            Get.toNamed(transactionScreen),
                                         child: Text(
                                           "View All",
                                           style: TextStyle(
