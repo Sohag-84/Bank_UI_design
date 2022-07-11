@@ -75,3 +75,7 @@ class DialogColor {
   static const Color titleColor = Color(0xFF636363);
   static Color subtitleColor = Color(0xFF000000).withOpacity(.50);
 }
+
+class SettingColor {
+  static const Color bgColor = Color(0xFF08083D);
+}

@@ -1,18 +1,14 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, prefer_typing_uninitialized_variables
 
-import 'dart:ui';
-
 import 'package:bank_ui_design/constant/color.dart';
 import 'package:bank_ui_design/constant/strings.dart';
 import 'package:bank_ui_design/routes/route.dart';
-import 'package:bank_ui_design/widgets/custom_button.dart';
 import 'package:bank_ui_design/widgets/show_dialog.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 
 import '../../widgets/custom_container.dart';
-import '../../widgets/custom_dialog_container.dart';
 import '../../widgets/custom_transaction.dart';
 import '../../widgets/custom_transaction_list.dart';
 

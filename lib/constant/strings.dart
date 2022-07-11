@@ -100,3 +100,7 @@ class DialogText {
   static const String sendMoneyButton = "Send MONEY";
   static const String fundWalletButton = "FUND WALLET";
 }
+
+class SettingText {
+  static const String accountSetting = "Account Settings";
+}
