@@ -92,3 +92,11 @@ class CardText {
   static const String cardHolderName = "CARD HOLDER NAME";
   static const String expireDate = "EXPIRE DATE";
 }
+
+class DialogText {
+  static const String title = "Choose option";
+  static const String subtitle = "Pick a card to continue.";
+  static const String widthdrowButton = "Withdraw FUNDS";
+  static const String sendMoneyButton = "Send MONEY";
+  static const String fundWalletButton = "FUND WALLET";
+}

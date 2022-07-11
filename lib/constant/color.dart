@@ -70,3 +70,8 @@ class CardColor {
   static const Color bg_color = Color(0xFFE5E5E5);
   static Color blurTextcolor = Color(0xFFFEFEFE).withOpacity(.50);
 }
+
+class DialogColor {
+  static const Color titleColor = Color(0xFF636363);
+  static Color subtitleColor = Color(0xFF000000).withOpacity(.50);
+}
