@@ -3,6 +3,7 @@
 import 'package:bank_ui_design/constant/color.dart';
 import 'package:bank_ui_design/constant/strings.dart';
 import 'package:bank_ui_design/routes/route.dart';
+import 'package:bank_ui_design/views/pages/send_money_screen.dart';
 import 'package:bank_ui_design/widgets/show_dialog.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -177,8 +178,10 @@ class DashboardScreen extends StatelessWidget {
                                   context: context,
                                   builder: (_) {
                                     return CustomDialog(
-                                      buttonText: DialogText.fundWalletButton,
-                                    );
+                                        buttonText: DialogText.fundWalletButton,
+                                        onPressed: () {
+                                          print("object");
+                                        });
                                   });
                             },
                             child: CustomTransaction(
@@ -198,7 +201,11 @@ class DashboardScreen extends StatelessWidget {
                                 context: context,
                                 builder: (_) {
                                   return CustomDialog(
-                                      buttonText: DialogText.sendMoneyButton);
+                                    buttonText: DialogText.sendMoneyButton,
+                                    onPressed: () {
+                                      Get.to(SendMoneyScreen());
+                                    },
+                                  );
                                 },
                               );
                             },
@@ -219,8 +226,10 @@ class DashboardScreen extends StatelessWidget {
                                 context: context,
                                 builder: (_) {
                                   return CustomDialog(
-                                    buttonText: DialogText.widthdrowButton,
-                                  );
+                                      buttonText: DialogText.widthdrowButton,
+                                      onPressed: () {
+                                        print("object");
+                                      });
                                 },
                               );
                             },

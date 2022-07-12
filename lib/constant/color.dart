@@ -79,3 +79,9 @@ class DialogColor {
 class SettingColor {
   static const Color bgColor = Color(0xFF08083D);
 }
+
+class SendMoneyColor {
+  static const Color titleColor = Color(0xFF2F2F2F);
+  static Color subtitleColor = Color(0xFF000000).withOpacity(.50);
+  static const Color iconColor = Color(0xFF62BB46);
+}

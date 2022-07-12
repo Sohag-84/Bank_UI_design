@@ -104,3 +104,14 @@ class DialogText {
 class SettingText {
   static const String accountSetting = "Account Settings";
 }
+
+class SendMoneyText {
+  static const String headingSubtitle =
+      "Choose an option to begin the transfer";
+  static const String title_1 = "Bank Transfer";
+  static const String title_2 = "Sutraq User";
+  static const String subtitle_1 =
+      "Send money from your sutraq accounts to any bank account in the world";
+  static const String subtitle_2 =
+      "Send money from your sutraq accounts to other sutraq users";
+}

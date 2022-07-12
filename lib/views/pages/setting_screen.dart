@@ -125,13 +125,18 @@ class _SettingScreenState extends State<SettingScreen> {
                       SizedBox(
                         height: 10.h,
                       ),
-                      ListTile(
-                        title: Text(
-                          "PREFERENCES",
-                          style: TextStyle(
-                            color: Color(0xFF7E7E7E),
-                            fontWeight: FontWeight.w500,
-                            fontSize: 10.sp,
+                      SizedBox(
+                        height: 15,
+                        child: ListTile(
+                          visualDensity:
+                              VisualDensity(horizontal: 0, vertical: -4),
+                          title: Text(
+                            "PREFERENCES",
+                            style: TextStyle(
+                              color: Color(0xFF7E7E7E),
+                              fontWeight: FontWeight.w500,
+                              fontSize: 10.sp,
+                            ),
                           ),
                         ),
                       ),
@@ -147,6 +152,8 @@ class _SettingScreenState extends State<SettingScreen> {
                         onPressed: () {},
                       ),
                       ListTile(
+                        visualDensity:
+                            VisualDensity(horizontal: 0, vertical: -4),
                         title: Text(
                           "NOTIFICATIONS",
                           style: TextStyle(
