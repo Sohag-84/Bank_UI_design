@@ -118,12 +118,15 @@ class WalletScreen extends StatelessWidget {
                               SizedBox(
                                 height: 20.h,
                               ),
-                              CustomTransaction(
-                                icon: Icons.send_to_mobile_outlined,
-                                text: DashboardText.sendMoney,
-                                bgColor: WalletColor.circleColor,
-                                radius: 28.r,
-                                textColor: WalletColor.circleTextColor,
+                              InkWell(
+                                onTap: () => Get.toNamed(sendMoneyScreen),
+                                child: CustomTransaction(
+                                  icon: Icons.send_to_mobile_outlined,
+                                  text: DashboardText.sendMoney,
+                                  bgColor: WalletColor.circleColor,
+                                  radius: 28.r,
+                                  textColor: WalletColor.circleTextColor,
+                                ),
                               ),
                               SizedBox(
                                 height: 20.h,

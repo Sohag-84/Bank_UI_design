@@ -7,6 +7,7 @@ import '../views/forgot_password_screen.dart';
 import '../views/login_screen.dart';
 import '../views/pages/bottom_nav_page.dart';
 import '../views/pages/onboarding_page.dart';
+import '../views/pages/send_money_screen.dart';
 import '../views/pages/wallet_screen.dart';
 import '../views/splash_screen.dart';
 import '../views/tip_screen.dart';
@@ -21,6 +22,7 @@ const String tipScreen = '/tip-screen';
 const String navigationBar = '/navigationBar-screen';
 const String transactionScreen = '/transaction-screen';
 const String walletScreen = '/wallet-screen';
+const String sendMoneyScreen = '/sendMoney-screen';
 
 List<GetPage> pages = [
   GetPage(
@@ -58,5 +60,9 @@ List<GetPage> pages = [
   GetPage(
     name: walletScreen,
     page: () => WalletScreen(),
+  ),
+  GetPage(
+    name: sendMoneyScreen,
+    page: () => SendMoneyScreen(),
   ),
 ];
